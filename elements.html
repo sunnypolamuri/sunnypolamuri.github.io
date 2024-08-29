@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Skills & Tools</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom CSS for Skills & Tools section */
+        .skills-section {
+            padding: 3em;
+            background: linear-gradient(135deg, #f8f8f8, #ffffff);
+            border-radius: 10px;
+            margin: 2em 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skills-header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-item {
+            flex: 1 1 200px;
+            margin: 1em;
+            background: #ffffff;
+            padding: 1.5em;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-icon {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #4a90e2;
+            transition: color 0.3s;
+        }
+
+        .skill-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.3em;
+        }
+
+        .skill-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .skill-item:hover .skill-icon {
+            color: #d35400;
+        }
+
+        @media (max-width: 768px) {
+            .skill-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Sunny Polamuri</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="generic.html">About</a></li>
+                <li class="active"><a href="elements.html">Skills & Tools</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/sunnypolamuri/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/sunnypolamuri" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Skills & Tools Section -->
+            <section class="skills-section">
+                <header class="skills-header">
+                    <h1>Skills & Tools</h1>
+                </header>
+                <div class="skills-list">
+                    <!-- Skill Item -->
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="icon solid fa-database"></i></div>
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-description">Data manipulation, ETL processes, and complex query building</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="icon solid fa-code"></i></div>
+                        <div class="skill-name">Python</div>
+                        <div class="skill-description">Data analysis, automation scripts, web scraping</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="icon solid fa-chart-bar"></i></div>
+                        <div class="skill-name">Power BI</div>
+                        <div class="skill-description">Data visualization, dashboard creation, data modeling</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="icon solid fa-project-diagram"></i></div>
+                        <div class="skill-name">Data Modeling</div>
+                        <div class="skill-description">Designing efficient data structures for analytics and reporting</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="icon solid fa-cloud"></i></div>
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-description">S3, Redshift, Athena - Cloud data storage and processing</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="icon solid fa-table"></i></div>
+                        <div class="skill-name">Tableau</div>
+                        <div class="skill-description">Creating interactive visualizations and dashboards</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="icon solid fa-chart-pie"></i></div>
+                        <div class="skill-name">Data Analytics</div>
+                        <div class="skill-description">Statistical analysis, A/B testing, predictive modeling</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer" style="background-color: #2e3d49; color: white; padding: 20px;">
+    <section>
+        <form method="post" action="#">
+            <div class="fields">
+                <div class="field">
+                    <label for="name" style="color: #fff;">Name</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="field">
+                    <label for="email" style="color: #fff;">Email</label>
+                    <input type="text" name="email" id="email" />
+                </div>
+                <div class="field">
+                    <label for="message" style="color: #fff;">Message</label>
+                    <textarea name="message" id="message" rows="3"></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" style="background-color: #4CAF50; color: white;" /></li>
+            </ul>
+        </form>
+    </section>
+    <section class="split contact">
+        <section class="alt">
+            <h3 style="color: #fff;">Address</h3>
+            <p>Tempe, Arizona-85288</p>
+        </section>
+        <section>
+            <h3 style="color: #fff;">Phone</h3>
+            <p><a href="tel:(602) 921-5603" style="color: #4CAF50;">(602) 921-5603</a></p>
+        </section>
+        <section>
+            <h3 style="color: #fff;">Email</h3>
+            <p><a href="mailto:spolamur@asu.edu" style="color: #4CAF50;">spolamur@asu.edu</a></p>
+        </section>
+        <section>
+            <h3 style="color: #fff;">Social</h3>
+            <ul class="icons alt">
+                <li><a href="https://www.linkedin.com/in/sunnypolamuri/" target="_blank" class="icon brands alt fa-linkedin" style="color: #4CAF50;"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/sunnypolamuri" target="_blank" class="icon brands alt fa-github" style="color: #4CAF50;"><span class="label">GitHub</span></a></li>
+            </ul>
+        </section>
+    </section>
+</footer>
+
+<!-- Copyright -->
+<div id="copyright" style="background-color: #333; color: #bbb; padding: 10px; text-align: center;">
+    <ul style="margin: 0; padding: 0; list-style: none;">
+        <li>&copy; Sunny Polamuri</li>
+    </ul>
+</div>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
